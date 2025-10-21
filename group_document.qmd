@@ -7,6 +7,13 @@ format: html
 
 # Parastoo
 
+Hi, this is my first time working with git and github.
+
+```{r}
+x <- 2+2 
+x
+```
+
 # Raquel
 
 # Ole
