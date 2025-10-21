@@ -23,6 +23,15 @@ x <- 2+2
 x
 ```
 
+### New feature:
+
+hey hey hey!!
+
+```{r}
+y <- 2*4
+y
+```
+
 # Raquel
 
 ```{r}
@@ -31,7 +40,6 @@ library("here")
 library("table1")
 library("ggseqlogo")
 ```
-
 
 # Ole
 
