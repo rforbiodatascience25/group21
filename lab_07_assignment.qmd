@@ -95,7 +95,7 @@ pca_fit |>
   theme_minimal_grid(12)
 ```
 
-We plotted the Vectors of the biopsy results on the first two PCs of a PCA on tumor cell biopsy data, showing the magnitude of influence of the individual biopsy results on the PCs 1 and 2.
+We plotted the vectors of the biopsy results on the first two PCs of a PCA on tumor cell biopsy data, showing the magnitude of influence of the individual biopsy results on the PCs 1 and 2.
 
 ### Look at the variance explained by each PC
 
@@ -114,4 +114,4 @@ pca_fit |>
        title = "Variance explained by the principal components")
 ```
 
-We plotted the distribution of the variance that got explained by our PCA of the first 9 PCs in Percent.
+We plotted the distribution of the variance that is explained by the 9 principal components.
