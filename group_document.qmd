@@ -9,6 +9,14 @@ format: html
 
 # Raquel
 
+```{r}
+library("tidyverse")
+library("here")
+library("table1")
+library("ggseqlogo")
+```
+
+
 # Ole
 
 # Magda
