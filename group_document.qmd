@@ -16,6 +16,20 @@ x
 
 # Raquel
 
+```{r}
+library("tidyverse")
+library("here")
+library("table1")
+library("ggseqlogo")
+```
+
+
 # Ole
 
 # Magda
+
+```{r}
+print("Hello World")
+```
+
+Some text :)
