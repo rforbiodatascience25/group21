@@ -12,3 +12,9 @@ format: html
 # Ole
 
 # Magda
+
+```{r}
+print("Hello World")
+```
+
+Some text :)
