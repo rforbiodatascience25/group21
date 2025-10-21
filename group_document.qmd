@@ -16,8 +16,29 @@ result
 
 # Parastoo
 
+Hi, this is my first time working with git and github.
+
+```{r}
+x <- 2+2 
+x
+```
+
 # Raquel
+
+```{r}
+library("tidyverse")
+library("here")
+library("table1")
+library("ggseqlogo")
+```
+
 
 # Ole
 
 # Magda
+
+```{r}
+print("Hello World")
+```
+
+Some text :)
