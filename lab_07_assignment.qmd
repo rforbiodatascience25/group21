@@ -46,9 +46,51 @@ biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 
 ## Data description
 
+The biopsy dataset contains measurements from 699 breast cancer biopsies. The data include nine numerical tumor characteristics (scored from 1 to 10) and a categorical outcome indicating whether the tumor is bening or malignant.
+
 ## PCA analysis
 
 ### Look at the data in PC coordinates
+
+```{r}
+pca_fit <- biopsy |> 
+  select(where(is.numeric)) |> 
+  prcomp(scale = TRUE)
+
+pca_fit |> 
+  augment(biopsy) |> 
+  ggplot(aes(.fittedPC1, .fittedPC2, color = outcome)) + 
+  geom_point(size = 1.5, alpha=0.5) +
+  scale_color_manual(
+    values = c(malignant = "#9C0101", benign = "blue")
+  ) +
+  theme_half_open(12) + background_grid() +
+  labs(title = "The first two PCAs of biopsy data",
+       x = "PC1",
+       y = "PC2")
+  
+```
+
+```{r}
+arrow_style <- arrow(
+  angle = 20, ends = "first", type = "closed", length = grid::unit(8, "pt")
+)
+
+
+pca_fit |> 
+  tidy(matrix = "rotation") |> 
+  pivot_wider(names_from = "PC", names_prefix = "PC", values_from = "value") |> 
+  ggplot(aes(PC1, PC2)) +
+  geom_segment(xend = 0, yend = 0, arrow = arrow_style) +
+  geom_text(
+    aes(label = column),
+    hjust = 1, nudge_x = -0.02, 
+    color = "#9C0101"
+  ) +
+  xlim(-1.25, .5) + ylim(-.5, 1) +
+  coord_fixed() + 
+  theme_minimal_grid(12)
+```
 
 ### Look at the variance explained by each PC
 
