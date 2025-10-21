@@ -52,19 +52,17 @@ pca_fit <- biopsy |>
   prcomp(scale = TRUE)
 
 pca_fit |> 
-  augment(biopsy) 
+  augment(biopsy) |> 
   ggplot(aes(.fittedPC1, .fittedPC2, color = outcome)) + 
-  geom_point(size = 1.5) +
+  geom_point(size = 1.5, alpha=0.5) +
   scale_color_manual(
-    values = c(malignant = "#9C0101", benign = "purple")
+    values = c(malignant = "#9C0101", benign = "blue")
   ) +
-  theme_half_open(12) + background_grid()
+  theme_half_open(12) + background_grid() +
+  labs(title = "The first two PCAs of biopsy data",
+       x = "PC1",
+       y = "PC2")
   
-```
-
-```{r}
-pca_fit |> 
-  tidy(matrix = "rotation")
 ```
 
 ```{r}
