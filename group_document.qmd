@@ -25,13 +25,21 @@ x
 
 # Raquel
 
+## New analysis
+
+Hello :)
+
+```{r}
+x <- 3+4
+x
+```
+
 ```{r}
 library("tidyverse")
 library("here")
 library("table1")
 library("ggseqlogo")
 ```
-
 
 # Ole
 
