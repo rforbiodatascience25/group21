@@ -14,6 +14,14 @@ result <- collection1 + collection2
 result
 ```
 
+#### New analysis - branching
+
+```{r}
+library("tidyverse")
+tibble(x = c(4, 3, 5, 1, 2)) |> filter(x > 2)
+tibble(x = c(4, 3, 5, 1, 2), y = c(2, 4, 3, 5, 1)) |> select(y)
+```
+
 # Parastoo
 
 Hi, this is my first time working with git and github.
