@@ -65,7 +65,7 @@ pca_fit |>
     values = c(malignant = "#9C0101", benign = "blue")
   ) +
   theme_half_open(12) + background_grid() +
-  labs(title = "The first two PCAs of biopsy data",
+  labs(title = "The first two PCs of biopsy data",
        x = "PC1",
        y = "PC2")
   
@@ -104,5 +104,7 @@ pca_fit |>
     labels = scales::percent_format(),
     expand = expansion(mult = c(0, 0.01))
   ) +
-  theme_minimal_hgrid(12)
+  theme_minimal_hgrid(12) +
+  labs(y = "Percent",
+       title = "Variance explained by the principal components")
 ```
