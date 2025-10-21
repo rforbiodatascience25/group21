@@ -70,8 +70,9 @@ pca_fit |>
   labs(title = "The first two PCs of biopsy data",
        x = "PC1",
        y = "PC2")
-  
 ```
+
+Here we plotted the first two PCs conducted from a principle component analysis on a range of biopsy data of tumor cells, stratified by outcome of the tumor development.
 
 ```{r}
 arrow_style <- arrow(
