@@ -35,3 +35,16 @@ Raquel Ruiz Pascual, s254628
 ### Look at the data in PC coordinates
 
 ### Look at the variance explained by each PC
+
+```{r}
+pca_fit %>%
+  tidy(matrix = "eigenvalues") %>%
+  ggplot(aes(PC, percent)) +
+  geom_col(fill = "lightblue", alpha = 0.8, color = "black") +
+  scale_x_continuous(breaks = 1:9) +
+  scale_y_continuous(
+    labels = scales::percent_format(),
+    expand = expansion(mult = c(0, 0.01))
+  ) +
+  theme_minimal_hgrid(12)
+```
