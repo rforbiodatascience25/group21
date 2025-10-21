@@ -5,3 +5,19 @@ format:
     embed-resources: true
 editor: visual
 ---
+
+------------------------------------------------------------------------
+
+# Group composition
+
+Magdalena Zydorczak, s253712
+
+Parastoo Tabibzadehtehrani, s252800
+
+Sai Renuka Chandrasekaran, s252633
+
+Ole Lennart Decker, s253728
+
+Raquel Ruiz Pascual, s254628
+
+------------------------------------------------------------------------
