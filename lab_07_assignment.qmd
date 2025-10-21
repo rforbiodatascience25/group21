@@ -26,7 +26,17 @@ Raquel Ruiz Pascual, s254628
 
 ## Load libraries
 
+```{r}
+library(tidyverse)
+library(broom)  # devtools::install_github("tidymodels/broom")
+library(cowplot)
+```
+
 ## Load data
+
+```{r}
+biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
+```
 
 ## Data description
 
