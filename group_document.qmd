@@ -42,3 +42,9 @@ print("Hello World")
 ```
 
 Some text :)
+
+## New feature
+
+```{r}
+print("Some very important code")
+```
