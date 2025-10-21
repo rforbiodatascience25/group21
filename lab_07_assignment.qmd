@@ -21,3 +21,17 @@ Ole Lennart Decker, s253728
 Raquel Ruiz Pascual, s254628
 
 ------------------------------------------------------------------------
+
+# Assignment
+
+## Load libraries
+
+## Load data
+
+## Data description
+
+## PCA analysis
+
+### Look at the data in PC coordinates
+
+### Look at the variance explained by each PC
